@@ -4,7 +4,6 @@ import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.os.PersistableBundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         tapMeButton = findViewById(R.id.tap_me_button)
         tapMeButton.setOnClickListener { v ->
             val bounceAnimation = AnimationUtils.loadAnimation(this,
-                R.anim.bounce);
+                R.anim.bounce)
             v.startAnimation(bounceAnimation)
             incrementScore()
         }
